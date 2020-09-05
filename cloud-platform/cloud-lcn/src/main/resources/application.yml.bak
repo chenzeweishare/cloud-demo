@@ -1,0 +1,33 @@
+server:
+  port: 7000
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/  #将自己8761注册到8762上
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+    use-generated-keys: true
+
+spring:
+  application:
+    name: cloud-icn
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://47.106.122.230:8150/tx-manager?characterEncoding=UTF-8
+    username: root
+    password: regent2018
+
+tx-lcn:
+  logger:
+    driver-class-name: ${spring.datasource.driver-class-name}
+    enabled: true
+    jdbc-url: ${spring.datasource.url}
+    password: ${spring.datasource.password}
+    username: ${spring.datasource.username}
+  manager:
+    dtx-time: 36000
+    host: 127.0.0.1
+    port: 7001
+    admin-key: 123  # TM后台登陆密码，默认值为codingapi
