@@ -5,7 +5,7 @@ import com.regent.rbp.account.bean.Account;
 
 /**
 *  account_tbl
-* @author 大狼狗 2020-09-05
+* @author czw 2020-09-05
 */
 public interface AccountDao extends BaseMapper<Account> {
 }

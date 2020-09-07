@@ -20,6 +20,7 @@
         <module>cloud-eureka</module>
         <module>cloud-lcn</module>
         <module>cloud-config</module>
+        <module>cloud-zuul</module>
     </modules>
 
     <properties>

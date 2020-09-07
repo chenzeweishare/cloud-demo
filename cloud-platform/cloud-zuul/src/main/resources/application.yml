@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: cloud-zuul
+server:
+  port: 8764
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/  #将自己8761注册到8762上
+

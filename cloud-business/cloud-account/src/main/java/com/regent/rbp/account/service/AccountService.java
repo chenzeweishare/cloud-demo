@@ -2,7 +2,7 @@ package com.regent.rbp.account.service;
 
 /**
 * account
-* @author 大狼狗
+* @author czw
 * @date 2020/09/05
 */
 public interface AccountService {

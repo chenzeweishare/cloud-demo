@@ -6,7 +6,7 @@ import lombok.Data;
 
 /**
 *  account_tbl
-* @author 大狼狗 2020-09-05
+* @author czw 2020-09-05
 */
 @Data
 public class Account implements Serializable {

@@ -1,4 +1,5 @@
 
+-- order 库
 CREATE TABLE `order` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `user_id` varchar(255) DEFAULT NULL,
@@ -16,7 +17,7 @@ INSERT INTO `tx-order`.`order`(`id`, `user_id`, `commodity_code`, `count`, `mone
 INSERT INTO `tx-order`.`order`(`id`, `user_id`, `commodity_code`, `count`, `money`) VALUES (9, '1000', '9999', 1, 1);
 
 
-
+---storage库
 CREATE TABLE `storage` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `commodity_code` varchar(255) DEFAULT NULL COMMENT '商品code',
@@ -27,6 +28,8 @@ CREATE TABLE `storage` (
 
 INSERT INTO `tx-storage`.`storage`(`id`, `commodity_code`, `count`) VALUES (1, '9999', 95);
 
+
+----account库
 CREATE TABLE `account` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `user_id` varchar(255) DEFAULT NULL COMMENT '用户id',
