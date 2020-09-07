@@ -19,13 +19,14 @@ public class OrderController {
     @Autowired
     private OrderService orderService;
 
+
     /**
     * 新增或编辑
     */
     @PostMapping("/insert")
     public Object save(@RequestBody Order order){
         orderService.save(order);
-        return null;
+        return Boolean.TRUE;
     }
 
 }

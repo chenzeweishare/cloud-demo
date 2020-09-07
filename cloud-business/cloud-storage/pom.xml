@@ -11,4 +11,11 @@
 
     <groupId>com.regent.rbp</groupId>
     <artifactId>cloud-storage</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-config</artifactId>
+        </dependency>
+    </dependencies>
 </project>

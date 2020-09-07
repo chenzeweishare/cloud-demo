@@ -48,7 +48,7 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>8.0.17</version>
+            <version>6.0.6</version>
         </dependency>
 
         <!-- tx-lcn 分布式事务 -->
