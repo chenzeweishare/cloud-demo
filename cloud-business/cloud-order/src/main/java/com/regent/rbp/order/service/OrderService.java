@@ -8,5 +8,5 @@ import com.regent.rbp.order.bean.Order;
  */
 public interface OrderService {
 
-    void insert(Order order);
+    void save(Order order);
 }

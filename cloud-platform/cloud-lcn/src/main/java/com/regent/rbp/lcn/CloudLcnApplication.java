@@ -1,4 +1,4 @@
-package com.regent.rbp.account;
+package com.regent.rbp.lcn;
 
 import com.codingapi.txlcn.tm.config.EnableTransactionManagerServer;
 import org.springframework.boot.SpringApplication;

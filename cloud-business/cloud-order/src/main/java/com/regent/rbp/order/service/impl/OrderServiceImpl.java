@@ -35,11 +35,11 @@ public class OrderServiceImpl implements OrderService {
     @LcnTransaction
     @Transactional
     @Override
-    public void insert(Order order) {
+    public void save(Order order) {
         storageFeign.decrStorage(order.getCommodityCode(), order.getCount());
-        orderDao.insert(order);
+        orderDao.save(order);
         accountFeign.decrMoney(order.getUserId(), order.getMoney());
-        if (order.getId() / 2  == 0) {
+        if (order.getId() % 2  == 0) {
             int i = 1 / 0;
         }
     }

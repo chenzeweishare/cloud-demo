@@ -2,12 +2,14 @@ package com.regent.rbp.order.bean;
 
 import java.io.Serializable;
 
+import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
 /**
 *  order
 * @author 大狼狗 2020-09-05
 */
+@TableName(value = "order")
 @Data
 public class Order implements Serializable {
 
