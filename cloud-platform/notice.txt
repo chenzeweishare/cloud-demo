@@ -1,0 +1,13 @@
+1. 启动需要依赖redis, mysql,  对应账号, 密码需要自己修改
+2. 需要建4个mysql库, tx-storage, tx-order, tx-account对应business的3个服务, tx-manager对应lcn服务端服务, 再去执行对应init,sql
+3. 启动cloud-lcn, 需要注意第一次启动在配置文件中使用#spring.jpa.hibernate.ddl-auto=create, 后面用spring.jpa.hibernate.ddl-auto=validate
+3. 启动顺序, cloud-Eureka, cloud-lcn, cloud-config, cloud-zuul, cloud-account, cloud-storage, cloud-order
+4. 分布式事务测试接口(参数id为奇数为正常访问, 偶数则会抛错)
+post: http://127.0.0.1:8002/order/insert
+{
+        "id" : 14,
+        "userId" : "1000",
+        "commodityCode" : "9999",
+        "count" : 1,
+        "money" : 1
+}
